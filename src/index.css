@@ -1,0 +1,36 @@
+/*
+ * Tema de la plantilla — paleta de colores y tipografía.
+ * Tema Romántico / Cálido (Tonos Terracota, Arena, Rosas y Dorado)
+ */
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
+@theme {
+  --font-sans: "Outfit", sans-serif;
+  --color-ink: #2C1810;     /* Tono oscuro principal (marrón profundo/café espresso) */
+  --color-deep: #592B20;    /* Tono secundario profundo (terracota oscuro) */
+  --color-sea: #C86D51;     /* Tono medio (terracota cálido / coral suave) */
+  --color-mist: #F7EBE1;    /* Tono claro de fondo (arena suave / crema) */
+  --color-coral: #E05A62;   /* Acento vibrante (rosa coral / romance) */
+  --color-gold: #D4AF37;    /* Acento elegante (oro suave) */
+  --color-ivory: #FFF9F5;   /* Color de texto base (marfil muy claro y cálido) */
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ivory);
+  background-color: var(--color-ink);
+  margin: 0;
+  padding: 0;
+}
+
+.gradient {
+  background-image: linear-gradient(
+    155deg,
+    var(--color-ink) 0%,
+    var(--color-deep) 40%,
+    var(--color-sea) 75%,
+    var(--color-mist) 100%
+  );
+  box-shadow: 0 0 25px rgba(44, 24, 16, 0.2);
+}
